@@ -5,12 +5,13 @@ import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
 import com.mygdx.simpledropgame.SimpleDropGame;
 
-public class HtmlLauncher extends GwtApplication {
-
+public class HtmlLauncher extends GwtApplication
+{
         // USE THIS CODE FOR A FIXED SIZE APPLICATION
         @Override
-        public GwtApplicationConfiguration getConfig () {
-                return new GwtApplicationConfiguration(480, 320);
+        public GwtApplicationConfiguration getConfig ()
+        {
+                return new GwtApplicationConfiguration(800, 480);
         }
         // END CODE FOR FIXED SIZE APPLICATION
 
@@ -45,7 +46,8 @@ public class HtmlLauncher extends GwtApplication {
         // END OF CODE FOR RESIZABLE APPLICATION
 
         @Override
-        public ApplicationListener createApplicationListener () {
+        public ApplicationListener createApplicationListener ()
+        {
                 return new SimpleDropGame();
         }
 }
